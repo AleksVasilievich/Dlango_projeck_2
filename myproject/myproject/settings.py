@@ -26,7 +26,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '192.168.43.38',
-    '127.0.0.1'
+    '127.0.0.1',
 ]
 
 # Application definition
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "myapp",
+    "myapp2",
 ]
 
 MIDDLEWARE = [
