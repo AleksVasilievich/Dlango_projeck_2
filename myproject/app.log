@@ -279,3 +279,17 @@ INFO:django.server:"GET /myapp3/client_orders/10/ HTTP/1.1" 200 360
 INFO:django.server:"GET /myapp3/client_orders/10/ HTTP/1.1" 200 360
 INFO:django.server:"GET /myapp3/client_orders/10/ HTTP/1.1" 200 360
 INFO:django.server:"GET /myapp3/client_orders/10/ HTTP/1.1" 200 388
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.server:"GET /favicon.ico HTTP/1.1" 404 2548
+WARNING:django.request:Not Found: /myapp2/
+WARNING:django.server:"GET /myapp2/ HTTP/1.1" 404 2536
+INFO:root:Посещена страница myapp3
+INFO:django.server:"GET /myapp3/ HTTP/1.1" 200 337
+INFO:django.server:"GET /myapp3/client_orders/5/ HTTP/1.1" 200 388
+INFO:django.server:"GET /myapp3/client_orders/6/ HTTP/1.1" 200 772
+INFO:django.server:"GET /myapp3/client_orders/7/ HTTP/1.1" 200 388
+INFO:django.server:"GET /myapp3/client_orders/8/ HTTP/1.1" 200 388
+INFO:django.server:"GET /myapp3/client_orders/6/ HTTP/1.1" 200 772
+INFO:django.server:"GET /myapp3/client_orders/7/ HTTP/1.1" 200 388
