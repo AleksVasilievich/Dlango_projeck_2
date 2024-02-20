@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "myapp",
     "myapp2",
     "myapp3",
+    "myapp4",
 ]
 
 MIDDLEWARE = [
@@ -55,7 +56,9 @@ ROOT_URLCONF = "myproject.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [
+            BASE_DIR / 'templates',
+        ],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -114,6 +117,9 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
@@ -148,7 +154,7 @@ LOGGING = {
             'handlers': ['console', 'file'],
             'level': 'INFO',
         },
-        'myapp': {
+        'myapp4': {
             'handlers': ['console', 'file'],
             'level': 'DEBUG',
             'propagate': True,
