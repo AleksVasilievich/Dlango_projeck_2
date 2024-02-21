@@ -769,3 +769,39 @@ INFO 2024-02-21 00:41:06,896 autoreload 14192 16428 Watching for file changes wi
 INFO 2024-02-21 00:41:07,132 basehttp 14192 17476 "GET /myapp4/add/upload/ HTTP/1.1" 200 587
 INFO 2024-02-21 00:41:17,710 basehttp 14192 17476 "GET /myapp4/add/ HTTP/1.1" 200 776
 INFO 2024-02-21 00:41:18,937 basehttp 14192 17476 "GET /myapp4/add/ HTTP/1.1" 200 776
+INFO 2024-02-21 19:04:38,093 autoreload 8724 10928 Watching for file changes with StatReloader
+INFO 2024-02-21 19:04:41,499 basehttp 8724 9860 "GET / HTTP/1.1" 200 388
+WARNING 2024-02-21 19:04:41,667 log 8724 9860 Not Found: /favicon.ico
+WARNING 2024-02-21 19:04:41,668 basehttp 8724 9860 "GET /favicon.ico HTTP/1.1" 404 2655
+INFO 2024-02-21 19:06:54,853 autoreload 8724 10928 C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\urls.py changed, reloading.
+INFO 2024-02-21 19:06:55,506 autoreload 10352 17940 Watching for file changes with StatReloader
+INFO 2024-02-21 19:06:59,548 basehttp 10352 8988 "GET / HTTP/1.1" 200 388
+WARNING 2024-02-21 19:07:18,996 log 10352 8988 Not Found: /add/
+WARNING 2024-02-21 19:07:18,998 basehttp 10352 8988 "GET /add/ HTTP/1.1" 404 2634
+WARNING 2024-02-21 19:08:48,069 log 10352 8988 Not Found: /add/upload/
+WARNING 2024-02-21 19:08:48,069 basehttp 10352 8988 "GET /add/upload/ HTTP/1.1" 404 2655
+INFO 2024-02-21 19:09:35,293 basehttp 10352 8988 "GET /myapp4/add/ HTTP/1.1" 200 776
+INFO 2024-02-21 19:10:27,477 basehttp 10352 8988 "GET /myapp4/add/upload/ HTTP/1.1" 200 587
+WARNING 2024-02-21 19:11:07,777 log 10352 8988 Not Found: /myapp4/add/upload_product_photo/
+WARNING 2024-02-21 19:11:07,778 basehttp 10352 8988 "GET /myapp4/add/upload_product_photo/ HTTP/1.1" 404 3168
+WARNING 2024-02-21 19:11:36,127 log 10352 8988 Not Found: /myapp4/add/upload_product_photo/
+WARNING 2024-02-21 19:11:36,129 basehttp 10352 8988 "GET /myapp4/add/upload_product_photo/ HTTP/1.1" 404 3168
+INFO 2024-02-21 19:11:57,515 basehttp 10352 8988 "GET /myapp4/add/upload2/ HTTP/1.1" 200 1443
+ERROR 2024-02-21 19:15:17,581 log 10352 8988 Internal Server Error: /myapp4/add/upload2/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py", line 57, in upload_product_photo
+    return redirect('product_detail', pk=product.pk)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'product_detail' not found. 'product_detail' is not a valid view function or pattern name.
+ERROR 2024-02-21 19:15:17,584 basehttp 10352 8988 "POST /myapp4/add/upload2/ HTTP/1.1" 500 86180

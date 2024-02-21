@@ -764,3 +764,39 @@ INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2
 INFO:django.server:"GET /myapp4/add/upload/ HTTP/1.1" 200 587
 INFO:django.server:"GET /myapp4/add/ HTTP/1.1" 200 776
 INFO:django.server:"GET /myapp4/add/ HTTP/1.1" 200 776
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.server:"GET /favicon.ico HTTP/1.1" 404 2655
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\urls.py changed, reloading.
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+WARNING:django.request:Not Found: /add/
+WARNING:django.server:"GET /add/ HTTP/1.1" 404 2634
+WARNING:django.request:Not Found: /add/upload/
+WARNING:django.server:"GET /add/upload/ HTTP/1.1" 404 2655
+INFO:django.server:"GET /myapp4/add/ HTTP/1.1" 200 776
+INFO:django.server:"GET /myapp4/add/upload/ HTTP/1.1" 200 587
+WARNING:django.request:Not Found: /myapp4/add/upload_product_photo/
+WARNING:django.server:"GET /myapp4/add/upload_product_photo/ HTTP/1.1" 404 3168
+WARNING:django.request:Not Found: /myapp4/add/upload_product_photo/
+WARNING:django.server:"GET /myapp4/add/upload_product_photo/ HTTP/1.1" 404 3168
+INFO:django.server:"GET /myapp4/add/upload2/ HTTP/1.1" 200 1443
+ERROR:django.request:Internal Server Error: /myapp4/add/upload2/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py", line 57, in upload_product_photo
+    return redirect('product_detail', pk=product.pk)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'product_detail' not found. 'product_detail' is not a valid view function or pattern name.
+ERROR:django.server:"POST /myapp4/add/upload2/ HTTP/1.1" 500 86180
