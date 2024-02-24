@@ -2007,3 +2007,165 @@ INFO 2024-02-24 09:18:22,813 basehttp 3088 17028 "GET / HTTP/1.1" 200 388
 INFO 2024-02-24 09:18:28,365 basehttp 3088 17028 "GET /admin/ HTTP/1.1" 200 12003
 INFO 2024-02-24 09:18:31,415 basehttp 3088 17028 "GET /admin/password_change/ HTTP/1.1" 200 9650
 INFO 2024-02-24 09:18:47,376 basehttp 3088 17028 "GET /admin/ HTTP/1.1" 200 12003
+INFO 2024-02-24 21:56:36,339 autoreload 6704 5688 Watching for file changes with StatReloader
+ERROR 2024-02-24 21:56:38,326 exception 6704 17312 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2024-02-24 21:56:38,341 log 6704 17312 Bad Request: /
+WARNING 2024-02-24 21:56:38,341 basehttp 6704 17312 "GET / HTTP/1.1" 400 143
+ERROR 2024-02-24 21:56:38,496 exception 6704 16648 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2024-02-24 21:56:38,498 log 6704 16648 Bad Request: /favicon.ico
+WARNING 2024-02-24 21:56:38,499 basehttp 6704 16648 "GET /favicon.ico HTTP/1.1" 400 143
+ERROR 2024-02-24 21:56:45,622 exception 6704 6044 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2024-02-24 21:56:45,623 log 6704 6044 Bad Request: /
+WARNING 2024-02-24 21:56:45,624 basehttp 6704 6044 "GET / HTTP/1.1" 400 143
+ERROR 2024-02-24 21:56:45,657 exception 6704 12488 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2024-02-24 21:56:45,659 log 6704 12488 Bad Request: /favicon.ico
+WARNING 2024-02-24 21:56:45,660 basehttp 6704 12488 "GET /favicon.ico HTTP/1.1" 400 143
+INFO 2024-02-24 21:58:19,003 autoreload 6704 5688 C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myproject\settings.py changed, reloading.
+INFO 2024-02-24 21:58:19,679 autoreload 3148 8972 Watching for file changes with StatReloader
+ERROR 2024-02-24 21:58:22,249 exception 3148 13224 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2024-02-24 21:58:22,253 log 3148 13224 Bad Request: /
+WARNING 2024-02-24 21:58:22,253 basehttp 3148 13224 "GET / HTTP/1.1" 400 143
+ERROR 2024-02-24 21:58:22,287 exception 3148 10600 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2024-02-24 21:58:22,289 log 3148 10600 Bad Request: /favicon.ico
+WARNING 2024-02-24 21:58:22,290 basehttp 3148 10600 "GET /favicon.ico HTTP/1.1" 400 143
+ERROR 2024-02-24 21:58:23,720 exception 3148 11404 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2024-02-24 21:58:23,721 log 3148 11404 Bad Request: /
+WARNING 2024-02-24 21:58:23,722 basehttp 3148 11404 "GET / HTTP/1.1" 400 143
+ERROR 2024-02-24 21:58:23,754 exception 3148 6452 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2024-02-24 21:58:23,757 log 3148 6452 Bad Request: /favicon.ico
+WARNING 2024-02-24 21:58:23,757 basehttp 3148 6452 "GET /favicon.ico HTTP/1.1" 400 143
+INFO 2024-02-24 21:58:47,873 autoreload 8056 6836 Watching for file changes with StatReloader
+ERROR 2024-02-24 21:58:50,975 exception 8056 17372 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2024-02-24 21:58:50,978 log 8056 17372 Bad Request: /about/
+WARNING 2024-02-24 21:58:50,979 basehttp 8056 17372 "GET /about/ HTTP/1.1" 400 143
+ERROR 2024-02-24 21:58:51,095 exception 8056 7100 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2024-02-24 21:58:51,097 log 8056 7100 Bad Request: /favicon.ico
+WARNING 2024-02-24 21:58:51,098 basehttp 8056 7100 "GET /favicon.ico HTTP/1.1" 400 143
+INFO 2024-02-24 22:01:18,453 autoreload 7264 5412 Watching for file changes with StatReloader
+INFO 2024-02-24 22:01:21,007 basehttp 7264 14072 "GET /about/ HTTP/1.1" 200 308
+WARNING 2024-02-24 22:01:21,060 log 7264 14072 Not Found: /favicon.ico
+WARNING 2024-02-24 22:01:21,061 basehttp 7264 14072 "GET /favicon.ico HTTP/1.1" 404 179
+INFO 2024-02-24 22:01:29,188 basehttp 7264 14072 "GET / HTTP/1.1" 200 388
+INFO 2024-02-24 22:01:30,906 basehttp 7264 14072 "GET / HTTP/1.1" 200 388
+INFO 2024-02-24 22:02:05,913 autoreload 7264 5412 C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myproject\settings.py changed, reloading.
+INFO 2024-02-24 22:02:06,630 autoreload 12980 16464 Watching for file changes with StatReloader
+INFO 2024-02-24 22:02:12,123 basehttp 12980 3980 "GET / HTTP/1.1" 200 10159
+INFO 2024-02-24 22:02:12,150 basehttp 12980 10488 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2024-02-24 22:02:12,150 basehttp 12980 3980 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13578
+INFO 2024-02-24 22:02:12,164 basehttp 12980 2000 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2024-02-24 22:02:12,173 basehttp 12980 3980 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2024-02-24 22:02:19,161 basehttp 12980 3980 "GET /__debug__/render_panel/?store_id=7cde8077787d4d118e590bc688b71b07&panel_id=HistoryPanel HTTP/1.1" 200 2505
+INFO 2024-02-24 22:02:19,176 basehttp 12980 3980 "GET /static/debug_toolbar/js/history.js HTTP/1.1" 200 3515
+INFO 2024-02-24 22:02:20,844 basehttp 12980 3980 "GET /__debug__/render_panel/?store_id=7cde8077787d4d118e590bc688b71b07&panel_id=VersionsPanel HTTP/1.1" 200 761
+INFO 2024-02-24 22:02:22,516 basehttp 12980 3980 "GET /__debug__/render_panel/?store_id=7cde8077787d4d118e590bc688b71b07&panel_id=SettingsPanel HTTP/1.1" 200 26909
+INFO 2024-02-24 22:02:24,739 basehttp 12980 3980 "GET /__debug__/render_panel/?store_id=7cde8077787d4d118e590bc688b71b07&panel_id=TemplatesPanel HTTP/1.1" 200 399
+INFO 2024-02-24 22:02:27,345 basehttp 12980 3980 "GET /__debug__/render_panel/?store_id=7cde8077787d4d118e590bc688b71b07&panel_id=SQLPanel HTTP/1.1" 200 428
+INFO 2024-02-24 22:03:23,573 autoreload 948 1796 Watching for file changes with StatReloader
+ERROR 2024-02-24 22:03:27,497 basehttp 948 5380 "GET / HTTP/1.1" 500 59
+INFO 2024-02-24 22:04:04,823 autoreload 948 1796 C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myproject\settings.py changed, reloading.
+INFO 2024-02-24 22:04:05,486 autoreload 10888 11124 Watching for file changes with StatReloader
+INFO 2024-02-24 22:04:07,853 basehttp 10888 2460 "GET / HTTP/1.1" 200 10159
+INFO 2024-02-24 22:04:07,895 basehttp 10888 8004 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+INFO 2024-02-24 22:04:07,895 basehttp 10888 2460 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+INFO 2024-02-24 22:04:07,906 basehttp 10888 8004 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+INFO 2024-02-24 22:04:07,918 basehttp 10888 2460 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
