@@ -293,3 +293,474 @@ INFO:django.server:"GET /myapp3/client_orders/7/ HTTP/1.1" 200 388
 INFO:django.server:"GET /myapp3/client_orders/8/ HTTP/1.1" 200 388
 INFO:django.server:"GET /myapp3/client_orders/6/ HTTP/1.1" 200 772
 INFO:django.server:"GET /myapp3/client_orders/7/ HTTP/1.1" 200 388
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.server:"GET /favicon.ico HTTP/1.1" 404 2655
+WARNING:django.request:Not Found: /myapp4/
+WARNING:django.server:"GET /myapp4/ HTTP/1.1" 404 2717
+ERROR:django.request:Internal Server Error: /myapp4/user/add/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py", line 20, in form_app4
+    return render(request, 'myapp4/form_app4.html', {'form': form})
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp4/form_app4.html
+ERROR:django.server:"GET /myapp4/user/add/ HTTP/1.1" 500 81161
+WARNING:django.request:Not Found: /user/add/
+WARNING:django.server:"GET /user/add/ HTTP/1.1" 404 2649
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myproject\urls.py changed, reloading.
+ERROR:django.request:Internal Server Error: /user/add/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py", line 20, in form_app4
+    return render(request, 'myapp4/form_app4.html', {'form': form})
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp4/form_app4.html
+ERROR:django.server:"GET /user/add/ HTTP/1.1" 500 81214
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py changed, reloading.
+INFO:django.server:"GET /user/add/ HTTP/1.1" 200 729
+INFO:django.server:"GET /user/add/ HTTP/1.1" 200 776
+INFO:myapp4.views:Получили name='Василий', email='sffsdgg1@mail.ru', age=21.
+INFO:django.server:"POST /user/add/ HTTP/1.1" 200 835
+INFO:myapp4.views:Получили name='Василий', email='sffsdgg1@mail.ru', age=21.
+INFO:django.server:"POST /user/add/ HTTP/1.1" 200 835
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+WARNING:django.request:Not Found: /users/
+WARNING:django.server:"GET /users/ HTTP/1.1" 404 2707
+WARNING:django.request:Not Found: /users/add/
+WARNING:django.server:"GET /users/add/ HTTP/1.1" 404 2719
+WARNING:django.request:Not Found: /users/add/
+WARNING:django.server:"GET /users/add/ HTTP/1.1" 404 2719
+INFO:django.server:"GET /user/add/ HTTP/1.1" 200 776
+INFO:myapp4.views:Получили name='name12', email='sffsdgg2@mail.ru', age=20.
+INFO:django.server:"POST /user/add/ HTTP/1.1" 200 827
+INFO:myapp4.views:Получили name='name12', email='sffsdgg2@mail.ru', age=20.
+INFO:django.server:"POST /user/add/ HTTP/1.1" 200 827
+INFO:myapp4.views:Получили name='name12', email='sffsdgg2@mail.ru', age=20.
+INFO:django.server:"POST /user/add/ HTTP/1.1" 200 827
+INFO:myapp4.views:Получили name='name12', email='sffsdgg2@mail.ru', age=20.
+INFO:django.server:"POST /user/add/ HTTP/1.1" 200 827
+INFO:myapp4.views:Получили name='name12', email='sffsdgg2@mail.ru', age=20.
+INFO:django.server:"POST /user/add/ HTTP/1.1" 200 827
+INFO:myapp4.views:Получили name='name12', email='sffsdgg2@mail.ru', age=20.
+INFO:django.server:"POST /user/add/ HTTP/1.1" 200 827
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myproject\settings.py changed, reloading.
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py changed, reloading.
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py changed, reloading.
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py changed, reloading.
+INFO:django.server:"GET /user/add/ HTTP/1.1" 200 776
+INFO:myapp4.views:Получили name='name12', email='sffsdgg2@mail.ru', age=28.
+INFO:django.server:"POST /user/add/ HTTP/1.1" 200 827
+INFO:myapp4.views:Получили name='name12', email='sffsdgg2@mail.ru', age=28.
+INFO:django.server:"POST /user/add/ HTTP/1.1" 200 827
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\forms.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\forms.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\urls.py changed, reloading.
+INFO:django.server:"GET /add/ HTTP/1.1" 200 776
+INFO:myapp4.views:Получили name='tadles5', email='sffsdgg11@mail.ru', age=24.
+INFO:django.server:"POST /add/ HTTP/1.1" 200 829
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\urls.py changed, reloading.
+ERROR:django.request:Internal Server Error: /add2/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py", line 31, in form2_app4
+    return render(request, 'form2_app4.html', {'form': form})
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: form2_app4.html
+ERROR:django.server:"GET /add2/ HTTP/1.1" 500 80742
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\forms.py changed, reloading.
+INFO:django.server:"GET /add/ HTTP/1.1" 200 776
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\urls.py changed, reloading.
+ERROR:django.request:Internal Server Error: /add2/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py", line 31, in form2_app4
+    return render(request, 'form2_app4.html', {'form': form})
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: form2_app4.html
+ERROR:django.server:"GET /add2/ HTTP/1.1" 500 80742
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\forms.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\forms.py changed, reloading.
+ERROR:django.request:Internal Server Error: /add2/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py", line 31, in form2_app4
+    return render(request, 'form2_app4.html', {'form': form})
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: form2_app4.html
+ERROR:django.server:"GET /add2/ HTTP/1.1" 500 80879
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myproject\urls.py changed, reloading.
+INFO:django.server:"GET /myapp4/add/ HTTP/1.1" 200 776
+ERROR:django.request:Internal Server Error: /myapp4/add2/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py", line 31, in form2_app4
+    return render(request, 'form2_app4.html', {'form': form})
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: form2_app4.html
+ERROR:django.server:"GET /myapp4/add2/ HTTP/1.1" 500 80826
+INFO:django.server:"GET /myapp4/add/ HTTP/1.1" 200 776
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myproject\settings.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\urls.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\urls.py changed, reloading.
+ERROR:django.request:Internal Server Error: /myapp4/upload/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py", line 46, in upload_image
+    return render(request, 'myapp4/upload_image.html', {'form':form})
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp4/upload_image.html
+ERROR:django.server:"GET /myapp4/upload/ HTTP/1.1" 500 81187
+INFO:django.server:"GET /myapp4/add/ HTTP/1.1" 200 776
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\forms.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\urls.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\urls.py changed, reloading.
+ERROR:django.request:Internal Server Error: /myapp4/add/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py", line 22, in form_app4
+    form = UserForm()
+NameError: name 'UserForm' is not defined
+ERROR:django.server:"GET /myapp4/add/ HTTP/1.1" 500 65954
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\forms.py changed, reloading.
+ERROR:django.request:Internal Server Error: /myapp4/add/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py", line 22, in form_app4
+    form = UserForm()
+NameError: name 'UserForm' is not defined
+ERROR:django.server:"GET /myapp4/add/ HTTP/1.1" 500 65954
+ERROR:django.request:Internal Server Error: /myapp4/add/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py", line 22, in form_app4
+    form = UserForm()
+NameError: name 'UserForm' is not defined
+ERROR:django.server:"GET /myapp4/add/ HTTP/1.1" 500 65954
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py changed, reloading.
+INFO:django.server:"GET /myapp4/add/ HTTP/1.1" 200 776
+ERROR:django.request:Internal Server Error: /myapp4/upload/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py", line 46, in upload_image
+    return render(request, 'upload_image.html', {'form':form})
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: upload_image.html
+ERROR:django.server:"GET /myapp4/upload/ HTTP/1.1" 500 81047
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\urls.py changed, reloading.
+ERROR:django.request:Internal Server Error: /myapp4/upload/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py", line 46, in upload_image
+    return render(request, 'upload_image.html', {'form':form})
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: upload_image.html
+ERROR:django.server:"GET /myapp4/upload/ HTTP/1.1" 500 81184
+ERROR:django.request:Internal Server Error: /myapp4/upload/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py", line 46, in upload_image
+    return render(request, 'upload_image.html', {'form':form})
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: upload_image.html
+ERROR:django.server:"GET /myapp4/upload/ HTTP/1.1" 500 81184
+INFO:django.server:"GET /myapp4/add/ HTTP/1.1" 200 776
+INFO:django.server:"GET /myapp4/add/ HTTP/1.1" 200 776
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\urls.py changed, reloading.
+INFO:django.server:"GET /myapp4/add/ HTTP/1.1" 200 776
+INFO:django.server:"GET /myapp4/add/upload/ HTTP/1.1" 200 587
+ERROR:django.request:Internal Server Error: /myapp4/add/upload/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py", line 40, in upload_image
+    if form.is_valid():
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\forms.py", line 197, in is_valid
+    return self.is_bound and not self.errors
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\forms.py", line 192, in errors
+    self.full_clean()
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\forms.py", line 327, in full_clean
+    self._clean_fields()
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\forms.py", line 337, in _clean_fields
+    value = field.clean(value, bf.initial)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\fields.py", line 689, in clean
+    return super().clean(data)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\fields.py", line 204, in clean
+    value = self.to_python(value)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\fields.py", line 716, in to_python
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+ERROR:django.server:"POST /myapp4/add/upload/ HTTP/1.1" 500 95079
+ERROR:django.request:Internal Server Error: /myapp4/add/upload/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py", line 40, in upload_image
+    if form.is_valid():
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\forms.py", line 197, in is_valid
+    return self.is_bound and not self.errors
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\forms.py", line 192, in errors
+    self.full_clean()
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\forms.py", line 327, in full_clean
+    self._clean_fields()
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\forms.py", line 337, in _clean_fields
+    value = field.clean(value, bf.initial)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\fields.py", line 689, in clean
+    return super().clean(data)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\fields.py", line 204, in clean
+    value = self.to_python(value)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\fields.py", line 716, in to_python
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+ERROR:django.server:"POST /myapp4/add/upload/ HTTP/1.1" 500 95079
+INFO:django.server:"GET /myapp4/add/ HTTP/1.1" 200 776
+INFO:django.server:"GET /myapp4/add/ HTTP/1.1" 200 776
+INFO:django.server:"GET /myapp4/add/upload/ HTTP/1.1" 200 587
+ERROR:django.request:Internal Server Error: /myapp4/add/upload/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py", line 40, in upload_image
+    if form.is_valid():
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\forms.py", line 197, in is_valid
+    return self.is_bound and not self.errors
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\forms.py", line 192, in errors
+    self.full_clean()
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\forms.py", line 327, in full_clean
+    self._clean_fields()
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\forms.py", line 337, in _clean_fields
+    value = field.clean(value, bf.initial)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\fields.py", line 689, in clean
+    return super().clean(data)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\fields.py", line 204, in clean
+    value = self.to_python(value)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\fields.py", line 716, in to_python
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+ERROR:django.server:"POST /myapp4/add/upload/ HTTP/1.1" 500 95079
+INFO:django.server:"POST /myapp4/add/upload/ HTTP/1.1" 200 587
+INFO:django.server:"POST /myapp4/add/upload/ HTTP/1.1" 200 587
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\urls.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\forms.py changed, reloading.
+INFO:django.server:"GET /myapp4/add/ HTTP/1.1" 200 776
+INFO:django.server:"GET /myapp4/add/add2 HTTP/1.1" 301 0
+ERROR:django.request:Internal Server Error: /myapp4/add/add2/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py", line 34, in form2_app4
+    return render(request, 'form2_app4.html', {'form': form})
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: form2_app4.html
+ERROR:django.server:"GET /myapp4/add/add2/ HTTP/1.1" 500 81934
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\urls.py changed, reloading.
+INFO:django.server:"GET /myapp4/add/add2/form HTTP/1.1" 301 0
+ERROR:django.request:Internal Server Error: /myapp4/add/add2/form/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py", line 34, in form2_app4
+    return render(request, 'form2_app4.html', {'form': form})
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: form2_app4.html
+ERROR:django.server:"GET /myapp4/add/add2/form/ HTTP/1.1" 500 81994
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\urls.py changed, reloading.
+INFO:django.server:"GET /myapp4/add/ HTTP/1.1" 200 776
+INFO:django.server:"GET /myapp4/add2 HTTP/1.1" 301 0
+ERROR:django.request:Internal Server Error: /myapp4/add2/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py", line 34, in form2_app4
+    return render(request, 'form2_app4.html', {'form': form})
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: form2_app4.html
+ERROR:django.server:"GET /myapp4/add2/ HTTP/1.1" 500 81886
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\urls.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\forms.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py changed, reloading.
+INFO:django.server:"GET /myapp4/add/upload/ HTTP/1.1" 200 587
+INFO:django.server:"GET /myapp4/add/ HTTP/1.1" 200 776
+INFO:django.server:"GET /myapp4/add/ HTTP/1.1" 200 776
