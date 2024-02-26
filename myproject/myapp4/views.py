@@ -45,3 +45,17 @@ def upload_image(request):
         form = ImageForm()
     return render(request, 'upload_image.html', {'form':form})
 
+
+from django.shortcuts import render, redirect
+from .forms import ProductForm
+
+def upload_product_photo(request):
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            product = form.save()
+            return redirect('product_detail', pk=product.pk)
+    else:
+        form = ProductForm()
+    return render(request, 'upload_product_photo.html', {'form': form})
+

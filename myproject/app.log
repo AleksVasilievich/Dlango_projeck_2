@@ -764,3 +764,1206 @@ INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2
 INFO:django.server:"GET /myapp4/add/upload/ HTTP/1.1" 200 587
 INFO:django.server:"GET /myapp4/add/ HTTP/1.1" 200 776
 INFO:django.server:"GET /myapp4/add/ HTTP/1.1" 200 776
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.server:"GET /favicon.ico HTTP/1.1" 404 2655
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\urls.py changed, reloading.
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+WARNING:django.request:Not Found: /add/
+WARNING:django.server:"GET /add/ HTTP/1.1" 404 2634
+WARNING:django.request:Not Found: /add/upload/
+WARNING:django.server:"GET /add/upload/ HTTP/1.1" 404 2655
+INFO:django.server:"GET /myapp4/add/ HTTP/1.1" 200 776
+INFO:django.server:"GET /myapp4/add/upload/ HTTP/1.1" 200 587
+WARNING:django.request:Not Found: /myapp4/add/upload_product_photo/
+WARNING:django.server:"GET /myapp4/add/upload_product_photo/ HTTP/1.1" 404 3168
+WARNING:django.request:Not Found: /myapp4/add/upload_product_photo/
+WARNING:django.server:"GET /myapp4/add/upload_product_photo/ HTTP/1.1" 404 3168
+INFO:django.server:"GET /myapp4/add/upload2/ HTTP/1.1" 200 1443
+ERROR:django.request:Internal Server Error: /myapp4/add/upload2/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp4\views.py", line 57, in upload_product_photo
+    return redirect('product_detail', pk=product.pk)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'product_detail' not found. 'product_detail' is not a valid view function or pattern name.
+ERROR:django.server:"POST /myapp4/add/upload2/ HTTP/1.1" 500 86180
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена страница 'о себе'
+INFO:django.server:"GET /about/ HTTP/1.1" 200 308
+INFO:django.server:"GET /admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO:django.server:"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO:django.server:"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO:django.server:"GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO:django.server:"GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO:django.server:"GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO:django.server:"GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO:django.server:"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO:django.server:"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 7518
+INFO:django.server:"GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO:django.server:"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 13080
+INFO:django.server:"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO:django.server:"GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO:django.server:"GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO:django.server:"GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO:django.server:"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO:django.server:"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO:django.server:"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO:django.server:"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO:django.server:"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO:django.server:"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO:django.server:"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO:django.server:"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO:django.server:"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 13080
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 7518
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 13080
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 13080
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 7518
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 13080
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/? HTTP/1.1" 200 13080
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/?is_active__exact=0 HTTP/1.1" 200 11471
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/?is_active__exact=1 HTTP/1.1" 200 13639
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.server:"GET /favicon.ico HTTP/1.1" 404 2655
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 7518
+INFO:django.server:"GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 13080
+INFO:django.server:"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO:django.server:"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO:django.server:"GET /admin/auth/group/ HTTP/1.1" 200 8937
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/ HTTP/1.1" 200 13251
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/10/change/ HTTP/1.1" 200 12726
+INFO:django.server:"GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO:django.server:"GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO:django.server:"GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO:django.server:"GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO:django.server:"GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO:django.server:"GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO:django.server:"GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO:django.server:"GET /admin/myapp3/order/ HTTP/1.1" 200 45537
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/order/?p=7 HTTP/1.1" 200 14821
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/order/11/change/?_changelist_filters=p%3D7 HTTP/1.1" 200 16416
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/client/ HTTP/1.1" 200 23742
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/client/32/change/ HTTP/1.1" 200 12821
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/order/ HTTP/1.1" 200 45537
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/order/697/change/ HTTP/1.1" 200 16406
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 7518
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 7518
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 13080
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/1/change/ HTTP/1.1" 200 26273
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+INFO:django.server:"GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15492
+INFO:django.server:"GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+INFO:django.server:"GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+INFO:django.server:"GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+INFO:django.server:"GET /admin/auth/group/ HTTP/1.1" 200 8937
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 7518
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 7518
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 13080
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 7518
+INFO:django.server:"GET /admin/auth/user/add/ HTTP/1.1" 200 12392
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/auth/user/add/ HTTP/1.1" 200 12747
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/auth/user/add/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/auth/user/2/change/ HTTP/1.1" 200 26467
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/group/ HTTP/1.1" 200 8937
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/group/ HTTP/1.1" 200 8937
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/group/ HTTP/1.1" 200 8937
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/group/add/ HTTP/1.1" 200 15606
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/group/add/ HTTP/1.1" 200 16188
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 7910
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 13579
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 13579
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/1/change/ HTTP/1.1" 200 26855
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/ HTTP/1.1" 200 6297
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 7910
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 13579
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/1/change/ HTTP/1.1" 200 26855
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 13579
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/logout/ HTTP/1.1" 200 3817
+INFO:django.server:"GET /admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 7910
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 13579
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/2/change/ HTTP/1.1" 200 26753
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 13579
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/1/change/ HTTP/1.1" 200 26855
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 13579
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/2/change/ HTTP/1.1" 200 26753
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/2/change/ HTTP/1.1" 200 27623
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/client/ HTTP/1.1" 200 24612
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/order/ HTTP/1.1" 200 46407
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/ HTTP/1.1" 200 14121
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp5/ordercomment/ HTTP/1.1" 200 9471
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp5/review/ HTTP/1.1" 200 9424
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 14449
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/2/change/ HTTP/1.1" 200 27623
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/group/ HTTP/1.1" 200 9807
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/group/add/ HTTP/1.1" 200 17058
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/auth/group/add/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/auth/group/ HTTP/1.1" 200 11584
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/group/ HTTP/1.1" 200 11357
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/group/1/change/ HTTP/1.1" 200 17407
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/auth/group/1/change/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/auth/group/ HTTP/1.1" 200 11586
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 14769
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/logout/ HTTP/1.1" 200 3817
+INFO:django.server:"GET /admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4625
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4625
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4625
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4625
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4625
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4625
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 9819
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 14769
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/2/change/ HTTP/1.1" 200 27678
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/2/password/ HTTP/1.1" 200 10002
+INFO:django.server:"POST /admin/auth/user/2/password/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/auth/user/2/change/ HTTP/1.1" 200 27827
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 14769
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/logout/ HTTP/1.1" 200 3817
+INFO:django.server:"GET /admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4625
+INFO:django.server:"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 10189
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 14769
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/2/change/ HTTP/1.1" 200 27678
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/2/password/ HTTP/1.1" 200 10002
+INFO:django.server:"GET /admin/auth/user/2/password/ HTTP/1.1" 200 10002
+INFO:django.server:"POST /admin/auth/user/2/password/ HTTP/1.1" 200 10249
+INFO:django.server:"POST /admin/auth/user/2/password/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/auth/user/2/change/ HTTP/1.1" 200 27827
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/logout/ HTTP/1.1" 200 3817
+INFO:django.server:"GET /admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4625
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4625
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4625
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 10559
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 14769
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/2/change/ HTTP/1.1" 200 27678
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 14769
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/2/change/ HTTP/1.1" 200 27678
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/2/delete/ HTTP/1.1" 200 9557
+INFO:django.server:"GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+INFO:django.server:"POST /admin/auth/user/2/delete/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 14447
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/add/ HTTP/1.1" 200 13262
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/auth/user/add/ HTTP/1.1" 200 13481
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/auth/user/add/ HTTP/1.1" 200 13481
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/auth/user/add/ HTTP/1.1" 200 13481
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/auth/user/add/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/auth/user/3/change/ HTTP/1.1" 200 27974
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 14769
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/3/change/ HTTP/1.1" 200 27678
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/logout/ HTTP/1.1" 200 3817
+INFO:django.server:"GET /admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4625
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4625
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4625
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 11251
+INFO:django.server:"GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 14769
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/3/change/ HTTP/1.1" 200 27678
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/3/password/ HTTP/1.1" 200 10002
+INFO:django.server:"POST /admin/auth/user/3/password/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/auth/user/3/change/ HTTP/1.1" 200 27827
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/auth/user/3/change/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 14989
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/logout/ HTTP/1.1" 200 3817
+INFO:django.server:"GET /admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4625
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4625
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 11991
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 14769
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/3/change/ HTTP/1.1" 200 27678
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/3/password/ HTTP/1.1" 200 10002
+INFO:django.server:"POST /admin/auth/user/3/password/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/auth/user/3/change/ HTTP/1.1" 200 27827
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/auth/user/3/change/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 14989
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/logout/ HTTP/1.1" 200 3817
+INFO:django.server:"GET /admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4625
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 12366
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 14769
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/3/change/ HTTP/1.1" 200 27678
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/3/delete/ HTTP/1.1" 200 9557
+INFO:django.server:"POST /admin/auth/user/3/delete/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 14447
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 14270
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/add/ HTTP/1.1" 200 13262
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/auth/user/add/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/auth/user/4/change/ HTTP/1.1" 200 27979
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/logout/ HTTP/1.1" 200 3817
+INFO:django.server:"GET /admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4625
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4626
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4626
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 12306
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 14771
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/4/change/ HTTP/1.1" 200 27682
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/auth/user/4/change/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 14992
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/logout/ HTTP/1.1" 200 3817
+INFO:django.server:"GET /admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 4890
+INFO:django.server:"POST /admin/logout/ HTTP/1.1" 200 3817
+INFO:django.server:"GET /admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 12307
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 14771
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/group/ HTTP/1.1" 200 11357
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/group/1/change/ HTTP/1.1" 200 17407
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 14771
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/4/change/ HTTP/1.1" 200 27726
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/auth/user/4/change/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 14992
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/logout/ HTTP/1.1" 200 3817
+INFO:django.server:"GET /admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 5913
+INFO:django.server:"POST /admin/logout/ HTTP/1.1" 200 3817
+INFO:django.server:"GET /admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 12308
+INFO:django.server:"GET /admin/myapp3/client/ HTTP/1.1" 200 24612
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/client/40/change/ HTTP/1.1" 200 13691
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/client/ HTTP/1.1" 200 24612
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/myapp3/client/ HTTP/1.1" 200 47621
+INFO:django.server:"GET /admin/myapp3/client/ HTTP/1.1" 200 24612
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/myapp3/client/ HTTP/1.1" 200 47621
+INFO:django.server:"POST /admin/myapp3/client/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/myapp3/client/ HTTP/1.1" 200 14229
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/client/ HTTP/1.1" 200 14082
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/client/ HTTP/1.1" 200 14082
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/ HTTP/1.1" 200 14121
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/order/ HTTP/1.1" 200 46299
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/order/?p=3 HTTP/1.1" 200 15583
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/order/?p=1 HTTP/1.1" 200 48925
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/order/?p=3 HTTP/1.1" 200 15583
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/order/?p=2 HTTP/1.1" 200 48925
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/order/?p=1 HTTP/1.1" 200 48925
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/myapp3/order/?p=1 HTTP/1.1" 200 24367
+INFO:django.server:"POST /admin/myapp3/order/?p=1 HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/myapp3/order/?p=1 HTTP/1.1" 200 49104
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/myapp3/order/?p=1 HTTP/1.1" 200 24367
+INFO:django.server:"POST /admin/myapp3/order/?p=1 HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/myapp3/order/?p=1 HTTP/1.1" 200 15244
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/order/7/change/?_changelist_filters=p%3D1 HTTP/1.1" 200 15781
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/client/10/change/?_to_field=id&_popup=1 HTTP/1.1" 200 7617
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/order/ HTTP/1.1" 200 14759
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/order/92/change/ HTTP/1.1" 200 15698
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 14771
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/order/ HTTP/1.1" 200 14759
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/myapp3/order/ HTTP/1.1" 200 10776
+INFO:django.server:"POST /admin/myapp3/order/ HTTP/1.1" 302 0
+INFO:django.server:"POST /admin/myapp3/order/ HTTP/1.1" 302 0
+INFO:django.server:- Broken pipe from ('127.0.0.1', 52646)
+INFO:django.server:"GET /admin/myapp3/order/ HTTP/1.1" 200 11628
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/ HTTP/1.1" 200 14121
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/client/ HTTP/1.1" 200 14082
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/client/add/ HTTP/1.1" 200 13393
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/myapp3/client/add/ HTTP/1.1" 200 13806
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/myapp3/client/add/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/myapp3/client/ HTTP/1.1" 200 14652
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/client/ HTTP/1.1" 200 14433
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/client/41/change/ HTTP/1.1" 200 13712
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/client/ HTTP/1.1" 200 14433
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/order/ HTTP/1.1" 200 11628
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/order/3/change/ HTTP/1.1" 200 15743
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/logout/ HTTP/1.1" 200 3817
+INFO:django.server:"GET /admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 5913
+INFO:django.server:"GET /admin/myapp5/ordercomment/ HTTP/1.1" 200 7403
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp5/ordercomment/add/ HTTP/1.1" 200 9784
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/myapp5/ordercomment/add/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/myapp5/ordercomment/ HTTP/1.1" 200 9276
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp5/ordercomment/1/change/ HTTP/1.1" 200 10171
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp5/ordercomment/ HTTP/1.1" 200 9014
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/logout/ HTTP/1.1" 200 3817
+INFO:django.server:"GET /admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 11955
+INFO:django.server:"GET /admin/myapp3/product/ HTTP/1.1" 200 14121
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/10/change/ HTTP/1.1" 200 13596
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/ HTTP/1.1" 200 14121
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/add/ HTTP/1.1" 200 13299
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/myapp3/product/add/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/myapp3/product/ HTTP/1.1" 200 14697
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/11/change/ HTTP/1.1" 200 13625
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/ HTTP/1.1" 200 14475
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/11/change/ HTTP/1.1" 200 13625
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp5\admin.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp5\admin.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp5\admin.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp5\admin.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp3\admin.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp5\admin.py changed, reloading.
+INFO:django.server:"GET /admin/myapp3/product/11/change/ HTTP/1.1" 200 13625
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/ HTTP/1.1" 200 16051
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp3\admin.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp3\admin.py changed, reloading.
+INFO:django.server:"GET /admin/myapp3/product/ HTTP/1.1" 200 18756
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/?o=-2.-4 HTTP/1.1" 200 19327
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/?o=2.-4 HTTP/1.1" 200 19292
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/?o=2.4 HTTP/1.1" 200 19257
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/?o=2.-4 HTTP/1.1" 200 19292
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp3\admin.py changed, reloading.
+INFO:django.server:"GET /admin/myapp3/product/?o=2.-4 HTTP/1.1" 200 19850
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/?q=%D0%B2%D0%BA%D1%83%D1%81&o=2.-4 HTTP/1.1" 200 13466
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/ HTTP/1.1" 200 19265
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/11/change/ HTTP/1.1" 200 13625
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/ HTTP/1.1" 200 19265
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/?q=%D0%A8%D1%83%D1%80%D1%83%D0%BF%D1%8B HTTP/1.1" 200 16140
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp3\admin.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp3\admin.py changed, reloading.
+INFO:django.server:"GET /admin/myapp3/product/?q=%D0%A8%D1%83%D1%80%D1%83%D0%BF%D1%8B HTTP/1.1" 200 16233
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/ HTTP/1.1" 200 19358
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/5/change/ HTTP/1.1" 200 13588
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/ HTTP/1.1" 200 19358
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/5/change/ HTTP/1.1" 200 13588
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/ HTTP/1.1" 200 19358
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/11/change/ HTTP/1.1" 200 13625
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/ HTTP/1.1" 200 19358
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/myapp3/product/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/myapp3/product/ HTTP/1.1" 200 19357
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/3/change/ HTTP/1.1" 200 13588
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp3\admin.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp3\admin.py changed, reloading.
+ERROR:django.request:Internal Server Error: /admin/myapp3/product/3/change/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 836, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\models.py", line 652, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\models.py", line 332, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (category, rating) specified for Product
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 715, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 1947, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 1803, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 1838, in _changeform_view
+    ModelForm = self.get_form(
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 838, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (category, rating) specified for Product. Check fields/fieldsets/exclude attributes of class ProductAdmin.
+ERROR:django.server:"GET /admin/myapp3/product/3/change/ HTTP/1.1" 500 144425
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp3\admin.py changed, reloading.
+INFO:django.server:"GET /admin/myapp3/product/3/change/ HTTP/1.1" 200 11774
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/ HTTP/1.1" 200 19357
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/5/change/ HTTP/1.1" 200 11774
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/order/ HTTP/1.1" 200 11628
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/order/2/change/ HTTP/1.1" 200 15794
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/ HTTP/1.1" 200 19357
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/11/change/ HTTP/1.1" 200 11810
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/ HTTP/1.1" 200 19357
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/?o=-2.-4 HTTP/1.1" 200 19978
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/9/change/?_changelist_filters=o%3D-2.-4 HTTP/1.1" 200 11874
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/ HTTP/1.1" 200 19357
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/?o=-2.-4 HTTP/1.1" 200 19978
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/myapp3/product/?o=-2.-4 HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/myapp3/product/?o=-2.-4 HTTP/1.1" 200 19977
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp3\admin.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp3\admin.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp3\admin.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp3\admin.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp3\admin.py changed, reloading.
+ERROR:django.request:Internal Server Error: /admin/myapp3/product/7/change/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 836, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\models.py", line 652, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\models.py", line 332, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (category, rating, date_added) specified for Product
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 715, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 1947, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 1803, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 1838, in _changeform_view
+    ModelForm = self.get_form(
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 838, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (category, rating, date_added) specified for Product. Check fields/fieldsets/exclude attributes of class ProductAdmin.
+ERROR:django.server:"GET /admin/myapp3/product/7/change/?_changelist_filters=o%3D-2.-4 HTTP/1.1" 500 146593
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp3\admin.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp3\admin.py changed, reloading.
+ERROR:django.request:Internal Server Error: /admin/myapp3/product/7/change/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 836, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\models.py", line 652, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\models.py", line 332, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (rating) specified for Product
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 715, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 1947, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 1803, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 1838, in _changeform_view
+    ModelForm = self.get_form(
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 838, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (rating) specified for Product. Check fields/fieldsets/exclude attributes of class ProductAdmin.
+ERROR:django.server:"GET /admin/myapp3/product/7/change/?_changelist_filters=o%3D-2.-4 HTTP/1.1" 500 146054
+ERROR:django.request:Internal Server Error: /admin/myapp3/product/7/change/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 836, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\models.py", line 652, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\models.py", line 332, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (rating) specified for Product
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 715, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 1947, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 1803, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 1838, in _changeform_view
+    ModelForm = self.get_form(
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 838, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (rating) specified for Product. Check fields/fieldsets/exclude attributes of class ProductAdmin.
+ERROR:django.server:"GET /admin/myapp3/product/7/change/?_changelist_filters=o%3D-2.-4 HTTP/1.1" 500 146054
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp3\admin.py changed, reloading.
+INFO:django.server:"GET /admin/myapp3/product/7/change/?_changelist_filters=o%3D-2.-4 HTTP/1.1" 200 13693
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /static/admin/js/collapse.js HTTP/1.1" 200 1803
+INFO:django.server:"GET /admin/myapp3/product/7/change/?_changelist_filters=o%3D-2.-4 HTTP/1.1" 200 13693
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp3\admin.py changed, reloading.
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/7/change/?_changelist_filters=o%3D-2.-4 HTTP/1.1" 200 13641
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/logout/ HTTP/1.1" 200 3817
+INFO:django.server:"GET /admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 12003
+INFO:django.server:"GET /admin/myapp3/product/ HTTP/1.1" 200 19356
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/order/ HTTP/1.1" 200 11628
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/order/3/change/ HTTP/1.1" 200 15794
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/client/ HTTP/1.1" 200 14433
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp3\admin.py changed, reloading.
+INFO:django.server:"GET /admin/myapp3/client/ HTTP/1.1" 200 18408
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/order/ HTTP/1.1" 200 13854
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/order/ HTTP/1.1" 200 13854
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+ERROR:django.request:Internal Server Error: /admin/myapp3/order/2/change/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 836, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\models.py", line 652, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\models.py", line 332, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (client_id) specified for Order
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 715, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 1947, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 1803, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 1838, in _changeform_view
+    ModelForm = self.get_form(
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 838, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (client_id) specified for Order. Check fields/fieldsets/exclude attributes of class OrderAdmin.
+ERROR:django.server:"GET /admin/myapp3/order/2/change/ HTTP/1.1" 500 143163
+ERROR:django.request:Internal Server Error: /admin/myapp3/order/2/change/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 836, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\models.py", line 652, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\models.py", line 332, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (client_id) specified for Order
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 715, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 1947, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 1803, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 1838, in _changeform_view
+    ModelForm = self.get_form(
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 838, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (client_id) specified for Order. Check fields/fieldsets/exclude attributes of class OrderAdmin.
+ERROR:django.server:"GET /admin/myapp3/order/2/change/ HTTP/1.1" 500 143300
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 12003
+INFO:django.server:"GET /admin/myapp3/order/ HTTP/1.1" 200 13854
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+ERROR:django.request:Internal Server Error: /admin/myapp3/order/3/change/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 836, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\models.py", line 652, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\models.py", line 332, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (client_id) specified for Order
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 715, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 1947, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 1803, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 1838, in _changeform_view
+    ModelForm = self.get_form(
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 838, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (client_id) specified for Order. Check fields/fieldsets/exclude attributes of class OrderAdmin.
+ERROR:django.server:"GET /admin/myapp3/order/3/change/ HTTP/1.1" 500 143163
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp3\admin.py changed, reloading.
+INFO:django.server:"GET /admin/myapp3/order/3/change/ HTTP/1.1" 200 13227
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/order/ HTTP/1.1" 200 13923
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/order/2/change/ HTTP/1.1" 200 13227
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/client/ HTTP/1.1" 200 18408
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+ERROR:django.request:Internal Server Error: /admin/myapp3/client/9/change/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 836, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\models.py", line 652, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\models.py", line 332, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (phone) specified for Client
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 715, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 1947, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 1803, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 1838, in _changeform_view
+    ModelForm = self.get_form(
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 838, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (phone) specified for Client. Check fields/fieldsets/exclude attributes of class ClientAdmin.
+ERROR:django.server:"GET /admin/myapp3/client/9/change/ HTTP/1.1" 500 143336
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp3\admin.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp3\admin.py changed, reloading.
+ERROR:django.request:Internal Server Error: /admin/myapp3/client/9/change/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 836, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\models.py", line 652, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\models.py", line 332, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (phone) specified for Client
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 715, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 1947, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 1803, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 1838, in _changeform_view
+    ModelForm = self.get_form(
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 838, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (phone) specified for Client. Check fields/fieldsets/exclude attributes of class ClientAdmin.
+ERROR:django.server:"GET /admin/myapp3/client/9/change/ HTTP/1.1" 500 143473
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp3\admin.py changed, reloading.
+ERROR:django.request:Internal Server Error: /admin/myapp3/client/9/change/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 836, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\models.py", line 652, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\forms\models.py", line 332, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (phone) specified for Client
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 715, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 1947, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 1803, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 1838, in _changeform_view
+    ModelForm = self.get_form(
+  File "C:\Users\Aleksandr\PycharmProjects\Django_project_2\venv\lib\site-packages\django\contrib\admin\options.py", line 838, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (phone) specified for Client. Check fields/fieldsets/exclude attributes of class ClientAdmin.
+ERROR:django.server:"GET /admin/myapp3/client/9/change/ HTTP/1.1" 500 143473
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\Django_project_2\myproject\myapp3\admin.py changed, reloading.
+INFO:django.server:"GET /admin/myapp3/client/9/change/ HTTP/1.1" 200 11830
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/client/ HTTP/1.1" 200 18408
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/client/9/change/ HTTP/1.1" 200 11830
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/order/ HTTP/1.1" 200 13923
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/order/2/change/ HTTP/1.1" 200 13227
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/ HTTP/1.1" 200 19356
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/3/change/ HTTP/1.1" 200 13541
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/client/ HTTP/1.1" 200 18408
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/client/ HTTP/1.1" 200 18408
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/client/9/change/ HTTP/1.1" 200 11830
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/client/ HTTP/1.1" 200 18408
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/client/8/change/ HTTP/1.1" 200 11830
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/ HTTP/1.1" 200 19356
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/2/change/ HTTP/1.1" 200 13541
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/order/ HTTP/1.1" 200 13923
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/order/1/change/ HTTP/1.1" 200 13227
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.server:"GET /favicon.ico HTTP/1.1" 404 2655
+INFO:root:Посещена страница 'о себе'
+INFO:django.server:"GET /about/ HTTP/1.1" 200 308
+INFO:django.server:"GET /admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 12003
+INFO:django.server:"GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO:django.server:"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO:django.server:"GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO:django.server:"GET /admin/myapp3/client/ HTTP/1.1" 200 18408
+INFO:django.server:"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO:django.server:"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO:django.server:"GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO:django.server:"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO:django.server:"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO:django.server:"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO:django.server:"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO:django.server:"GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO:django.server:"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO:django.server:"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO:django.server:"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO:django.server:"GET /admin/myapp3/order/ HTTP/1.1" 200 13923
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp3/product/ HTTP/1.1" 200 19356
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO:django.server:"GET /admin/myapp5/ordercomment/ HTTP/1.1" 200 11082
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp5/ordercomment/1/change/ HTTP/1.1" 200 13264
+INFO:django.server:"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO:django.server:"GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO:django.server:"GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO:django.server:"GET /admin/myapp5/review/ HTTP/1.1" 200 9424
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/group/ HTTP/1.1" 200 11357
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/group/1/change/ HTTP/1.1" 200 17407
+INFO:django.server:"GET /static/admin/js/SelectBox.js HTTP/1.1" 304 0
+INFO:django.server:"GET /static/admin/js/SelectFilter2.js HTTP/1.1" 304 0
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /static/admin/img/selector-icons.svg HTTP/1.1" 304 0
+INFO:django.server:"GET /static/admin/img/icon-unknown.svg HTTP/1.1" 304 0
+INFO:django.server:"GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 304 0
+INFO:django.server:"GET /admin/auth/group/ HTTP/1.1" 200 11357
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 14771
+INFO:django.server:"GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 14771
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 12003
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 12003
+INFO:django.server:"GET /admin/password_change/ HTTP/1.1" 200 9650
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 12003
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 12003
+INFO:django.server:"GET /admin/password_change/ HTTP/1.1" 200 9650
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 12003
