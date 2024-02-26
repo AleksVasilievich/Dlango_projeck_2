@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 import logging
 
-logging.basicConfig(filename='app.log', level=logging.INFO)
+logging.basicConfig(filename='./log/app.log', level=logging.INFO)
 
 
 def index(request):

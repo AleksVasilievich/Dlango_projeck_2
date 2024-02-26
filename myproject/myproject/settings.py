@@ -169,7 +169,7 @@ LOGGING = {
         },
         'file': {
             'class': 'logging.FileHandler',
-            'filename': 'django.log',
+            'filename': './log/django.log',
             'formatter': 'verbose',  # добавлен параметр formatter
             'encoding': 'UTF-8'
         },
