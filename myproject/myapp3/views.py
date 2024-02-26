@@ -4,7 +4,7 @@ from django.utils import timezone
 from django.http import HttpResponse
 import logging
 
-logging.basicConfig(filename='app.log', level=logging.INFO)
+logging.basicConfig(filename='./log/app.log', level=logging.INFO)
 
 from django.shortcuts import render
 from .models import Client, Order
