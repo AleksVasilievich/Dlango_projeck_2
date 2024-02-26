@@ -2169,3 +2169,4 @@ INFO 2024-02-24 22:04:07,895 basehttp 10888 8004 "GET /static/debug_toolbar/js/t
 INFO 2024-02-24 22:04:07,895 basehttp 10888 2460 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
 INFO 2024-02-24 22:04:07,906 basehttp 10888 8004 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
 INFO 2024-02-24 22:04:07,918 basehttp 10888 2460 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+INFO 2024-02-26 11:24:59,976 autoreload 18240 8648 Watching for file changes with StatReloader

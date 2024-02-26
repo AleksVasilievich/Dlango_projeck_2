@@ -326,3 +326,8 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,django,pycharm
+/myproject/media/
+/myproject/myapp/__pycache__/
+/myproject/myapp2/__pycache__/
+/myproject/myproject/__pycache__/
+
