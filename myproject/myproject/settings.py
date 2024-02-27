@@ -28,7 +28,7 @@ load_dotenv()
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool(os.environ.get("DEBUG", False))
+DEBUG = bool(os.environ.get("DEBUG"))
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 
