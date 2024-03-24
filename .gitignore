@@ -330,4 +330,4 @@ $RECYCLE.BIN/
 /myproject/myapp/__pycache__/
 /myproject/myapp2/__pycache__/
 /myproject/myproject/__pycache__/
-
+/__pycache__/
