@@ -38,3 +38,7 @@ def about(request):
     logging.info(log_data)
 
     return HttpResponse(html)
+
+
+def first(request):
+    return render(request, 'first.html')

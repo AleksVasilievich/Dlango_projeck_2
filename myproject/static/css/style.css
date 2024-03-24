@@ -6,7 +6,27 @@ body {
     max-width: 100%;
 }
 
-body p {
+.first {
+    background-color: #e9edd2a6;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    color: #855252;
+}
+
+.first_text {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: #855252;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+h2 {
     color: #17229d;
     background-color: #2a0707;
 }
